@@ -57,7 +57,7 @@ async def jarvis_command(audio: UploadFile = File(...)):
 
     try:
         completion = client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="openai/gpt-oss-120b",
             messages=messages,
             max_tokens=150,
             temperature=0.6,
